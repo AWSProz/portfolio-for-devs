@@ -1,7 +1,26 @@
 @import url(resetsAndSettingBase.css);
-@import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
 
 /*--------------------------------------------------------------
 # MENU LATERAL DO PORTFOLIO
@@ -44,7 +63,7 @@
   text-decoration: none;
 }
 
-#header .profile .social-links a {
+#header .profile .socialLinks a {
   font-size: 18px;
   display: inline-block;
   background: #212431;
@@ -59,7 +78,7 @@
   transition: 0.3s;
 }
 
-#header .profile .social-links a:hover {
+#header .profile .socialLinks a:hover {
   background: #149ddd;
   color: #fff;
   text-decoration: none;
@@ -153,7 +172,7 @@
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../images/steffanyBg.jpg") top center;
   background-size: cover;
 }
 
@@ -215,4 +234,643 @@
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+
+
+/*--------------------------------------------------------------
+# CONFIGURAÇÕES GERAIS
+--------------------------------------------------------------*/
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.sectionBg {
+  background: #f5f8fd;
+}
+
+.sectionTitle {
+  padding-bottom: 30px;
+}
+
+.sectionTitle h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.sectionTitle h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.sectionTitle p {
+  margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# SESSÃO SOBRE O DEV
+--------------------------------------------------------------*/
+
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# HARD SKILLS
+--------------------------------------------------------------*/
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progressBarWrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+.skills .progressBar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
+}
+
+
+/*--------------------------------------------------------------
+# CV
+--------------------------------------------------------------*/
+
+.resume .resumeTitle {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resumeItem {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.resume .resumeItem h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resumeItem h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resumeItem ul {
+  padding-left: 20px;
+}
+
+.resume .resumeItem ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resumeItem:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resumeItem::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+
+/*--------------------------------------------------------------
+# PORTFOLIO
+--------------------------------------------------------------*/
+
+.portfolio .portfolioItem {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolioFilters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolioFilters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolioFilters li:hover,
+.portfolio #portfolioFilters li.filterActive {
+  color: #149ddd;
+}
+
+.portfolio #portfolioFilters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolioWrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio .portfolioWrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolioWrap .portfolioLinks {
+  opacity: 1;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .portfolioWrap .portfolioLinks a {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  background: rgba(20, 157, 221, 0.75);
+  transition: 0.3s;
+  width: 50%;
+}
+
+.portfolio .portfolioWrap .portfolioLinks a:hover {
+  background: rgba(20, 157, 221, 0.95);
+}
+
+.portfolio .portfolioWrap .portfolioLinks a+a {
+  border-left: 1px solid #37b3ed;
+}
+
+.portfolio .portfolioWrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolioWrap:hover .portfolioLinks {
+  opacity: 1;
+  bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# CURSOS
+--------------------------------------------------------------*/
+
+.courses .coursesCarousel,
+.courses .testimonials-slider {
+  overflow: hidden;
+}
+
+.courses .coursesItem {
+  box-sizing: content-box;
+  text-align: center;
+  min-height: 320px;
+}
+
+.courses .coursesItem .coursesImage {
+  width: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.courses .coursesItem h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.courses .coursesItem h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.courses .coursesItem .quoteIconLeft,
+.courses .coursesItem .quoteIconRight {
+  color: #c3e8fa;
+  font-size: 26px;
+}
+
+.courses .coursesItem .quoteIconLeft {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.courses .coursesItem .quoteIconRight {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.courses .coursesItem p {
+  font-style: italic;
+  margin: 0 15px 15px 15px;
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.courses .coursesItem p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #fff;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+.courses .swiperPagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.courses .swiperPagination .swiperPaginationBullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #149ddd;
+}
+
+.courses .swiperPagination .swiperPaginationBullet-active {
+  background-color: #149ddd;
+}
+
+
+
+/*--------------------------------------------------------------
+# CONTATO
+--------------------------------------------------------------*/
+
+.contact {
+  padding-bottom: 130px;
+}
+
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .socialLinks {
+  padding-left: 60px;
+}
+
+.contact .info .socialLinks a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .socialLinks a:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .phpEmailForm {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .phpEmailForm .formGroup {
+  padding-bottom: 8px;
+}
+
+.contact .phpEmailForm .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .phpEmailForm .errorMessage {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .phpEmailForm .errorMessage br+br {
+  margin-top: 25px;
+}
+
+.contact .phpEmailForm .sentMessage {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .phpEmailForm .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .phpEmailForm .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .phpEmailForm .formGroup {
+  margin-bottom: 15px;
+}
+
+.contact .phpEmailForm label {
+  padding-bottom: 8px;
+}
+
+.contact .phpEmailForm input,
+.contact .phpEmailForm textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .phpEmailForm input {
+  height: 44px;
+}
+
+.contact .phpEmailForm textarea {
+  padding: 10px 15px;
+}
+
+.contact .phpEmailForm button[type=submit] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .phpEmailForm button[type=submit]:hover {
+  background: #37b3ed;
+}
+
+/* Configuração de responsividade do formulário */
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #040b14;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #eaebf0;
+}
+
+/* Configuração de responsividade do footer */
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# BOTÃO DE VOLTAR AO TOPO
+--------------------------------------------------------------*/
+.backToTop {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #149ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.backToTop i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.backToTop:hover {
+  background: #2eafec;
+  color: #fff;
+}
+
+.backToTop.active {
+  visibility: visible;
+  opacity: 1;
 }
