@@ -663,12 +663,12 @@ section {
   left: calc(50% - 20px);
 }
 
-.courses .swiperPagination {
+.courses .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.courses .swiperPagination .swiperPaginationBullet {
+.courses .swiper-pagination .swiper-paginationBullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -676,7 +676,7 @@ section {
   border: 1px solid #149ddd;
 }
 
-.courses .swiperPagination .swiperPaginationBullet-active {
+.courses .swiper-pagination .swiper-paginationBullet-active {
   background-color: #149ddd;
 }
 
