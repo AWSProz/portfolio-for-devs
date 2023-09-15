@@ -246,15 +246,15 @@ section {
   overflow: hidden;
 }
 
-.sectionBg {
+.section-bg {
   background: #f5f8fd;
 }
 
-.sectionTitle {
+.section-title {
   padding-bottom: 30px;
 }
 
-.sectionTitle h2 {
+.section-title h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -263,7 +263,7 @@ section {
   color: #173b6c;
 }
 
-.sectionTitle h2::after {
+.section-title h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -274,7 +274,7 @@ section {
   left: 0;
 }
 
-.sectionTitle p {
+.section-title p {
   margin-bottom: 0;
 }
 
@@ -343,12 +343,12 @@ section {
   font-style: normal;
 }
 
-.skills .progressBarWrap {
+.skills .progress-bar-wrap {
   background: #dce8f8;
   height: 10px;
 }
 
-.skills .progressBar {
+.skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
@@ -360,7 +360,7 @@ section {
 # CV
 --------------------------------------------------------------*/
 
-.resume .resumeTitle {
+.resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -368,14 +368,14 @@ section {
   color: #050d18;
 }
 
-.resume .resumeItem {
+.resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #1f5297;
   position: relative;
 }
 
-.resume .resumeItem h4 {
+.resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -385,7 +385,7 @@ section {
   margin-bottom: 10px;
 }
 
-.resume .resumeItem h5 {
+.resume .resume-item h5 {
   font-size: 16px;
   background: #e4edf9;
   padding: 5px 15px;
@@ -394,19 +394,19 @@ section {
   margin-bottom: 10px;
 }
 
-.resume .resumeItem ul {
+.resume .resume-item ul {
   padding-left: 20px;
 }
 
-.resume .resumeItem ul li {
+.resume .resume-item ul li {
   padding-bottom: 10px;
 }
 
-.resume .resumeItem:last-child {
+.resume .resume-item:last-child {
   padding-bottom: 0;
 }
 
-.resume .resumeItem::before {
+.resume .resume-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -423,11 +423,11 @@ section {
 # PORTFOLIO
 --------------------------------------------------------------*/
 
-.portfolio .portfolioItem {
+.portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolioFilters {
+.portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -437,7 +437,7 @@ section {
   padding: 2px 15px;
 }
 
-.portfolio #portfolioFilters li {
+.portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -450,23 +450,23 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolioFilters li:hover,
-.portfolio #portfolioFilters li.filterActive {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #149ddd;
 }
 
-.portfolio #portfolioFilters li:last-child {
+.portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolioWrap {
+.portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-.portfolio .portfolioWrap::before {
+.portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -479,7 +479,7 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolioWrap .portfolioLinks {
+.portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
   left: 0;
   right: 0;
@@ -491,7 +491,7 @@ section {
   justify-content: center;
 }
 
-.portfolio .portfolioWrap .portfolioLinks a {
+.portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   font-size: 28px;
   text-align: center;
@@ -500,15 +500,15 @@ section {
   width: 50%;
 }
 
-.portfolio .portfolioWrap .portfolioLinks a:hover {
+.portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolioWrap .portfolioLinks a+a {
+.portfolio .portfolio-wrap .portfolio-links a+a {
   border-left: 1px solid #37b3ed;
 }
 
-.portfolio .portfolioWrap:hover::before {
+.portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -516,9 +516,74 @@ section {
   opacity: 1;
 }
 
-.portfolio .portfolioWrap:hover .portfolioLinks {
+.portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #149ddd;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #149ddd;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
 }
 
 
@@ -598,12 +663,12 @@ section {
   left: calc(50% - 20px);
 }
 
-.courses .swiperPagination {
+.courses .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.courses .swiperPagination .swiperPaginationBullet {
+.courses .swiper-pagination .swiper-paginationBullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -611,7 +676,7 @@ section {
   border: 1px solid #149ddd;
 }
 
-.courses .swiperPagination .swiperPaginationBullet-active {
+.courses .swiper-pagination .swiper-paginationBullet-active {
   background-color: #149ddd;
 }
 
@@ -845,7 +910,7 @@ section {
 /*--------------------------------------------------------------
 # BOTÃO DE VOLTAR AO TOPO
 --------------------------------------------------------------*/
-.backToTop {
+.back-to-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -859,18 +924,18 @@ section {
   transition: all 0.4s;
 }
 
-.backToTop i {
+.back-to-top i {
   font-size: 28px;
   color: #fff;
   line-height: 0;
 }
 
-.backToTop:hover {
+.back-to-top:hover {
   background: #2eafec;
   color: #fff;
 }
 
-.backToTop.active {
+.back-to-top.active {
   visibility: visible;
   opacity: 1;
 }
