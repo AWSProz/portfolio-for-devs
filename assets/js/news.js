@@ -44,4 +44,3 @@ emailInput.addEventListener("change", function(e){
     emailHelper.classList.add("visible");
     }
 })
-
