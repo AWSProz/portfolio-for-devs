@@ -111,7 +111,7 @@ body,
 input,
 select,
 textarea {
-  color: #7f888f;
+  color: #515355;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -158,7 +158,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3d4449;
+  color: rgb(23, 59, 108);
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -252,7 +252,9 @@ hr {
 }
 
 hr.major {
+  color: rgb(23, 59, 108);
   margin: 3em 0;
+  
 }
 
 .align-left {
