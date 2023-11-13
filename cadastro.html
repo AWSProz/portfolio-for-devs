@@ -33,7 +33,7 @@
           <div class="align-banner">
             <div class="content">
               <header>
-                <h1>Olá, Seja Bem Vindo <br /> esse é o ForDevs</h1>
+                <h1>Esse é o cadastro <br /> do ForDevs</h1>
                 <p>Um porfolio de Devs para todas as áreas</p>
               </header>
               
@@ -41,86 +41,114 @@
                 <li><a href="#" class="button big">Leia Mais</a></li>
               </ul> -->
             </div>
-            <span class="image object">
+            <!-- <span class="image object">
               <img src="assets/images/logo.png" alt="" />
-            </span>
+            </span> -->
           </div>
         </section>
         <div class="contentText">
 
-            <p class="homeParagraph">Um dev precisa matar a cobra e mostrar o pau, ou seja, precisa mostrar que sabe fazer antes de efetivamente ter um cargo. Para isso, nada melhor do que um portfólio organizado. Esse é o objetivo do ForDevs. Ajudar você, dev, a ter o seu portfólio publicado e disponível para que as empresas o vejam.</br>Além disso, nosso site disponibiliza de publicações de vagas disponíveis em diversas áreas. Com certeza, alguma delas irá cair como uma luva para você.</br>Quer ficar por dentro das novidades?? Cadastre-se na nossa Newsletter e receba em seu e-mail as novidades  do mundo dev. E mais, assista os podCasts e acesse os blogs para se manter antenado.</p>
-          </div>
+            <p class="homeParagraph">Aqui você pode fazer o seu cadastro e nos enviar o seu CV, assim logo logo estará fazendo parte de um dos melhores sites de divulgação de Devs, Vagas e Informações. </p>
+        </div>
 
-        <section>
-          <header class="major">
-            <h2>O Que Temos Por Aqui</h2>
-          </header>
-          <div class="features">
-            <article>
-              <span class="icon fa-gem"></span>
-              <div class="content">
-                <h3>Vagas</h3>
-                <p>Em nosso Banco de Dados, possuímos cadastros de diversas vagas para devs. Com certeza você encontrará a sua.</p>
-              </div>
-            </article>
-            <article>
-              <span class="icon solid fa-paper-plane"></span>
-              <div class="content">
-                <h3>Newsletter</h3>
-                <p>Quer saber as novidades do mundo dev?? Cadastre-se na nossa Newsletter e receba atualizações.</p>
-              </div>
-            </article>
-            <article>
-              <span class="icon solid fa-rocket"></span>
-              <div class="content">
-                <h3>Impulsione sua carreira</h3>
-                <p>Sabemos que o melhor currículo para um dev é o seu portfólio de projetos desenvolvidos. Cadastre o seu e prepare-se para receber muitas oportunidades.</p>
-              </div>
-            </article>
-            <article>
-              <span class="icon solid fa-signal"></span>
-              <div class="content">
-                <h3>Quais as áreas de trabalho para um dev?</h3>
-                <p>É novo na área e ainda não sabe em qual área de desenvolvimento você gostaria de se especializar? Na nossa sessão 'Categorias', você conhecerá todas as áreas que um dev pode trabalhar.</p>
-              </div>
-            </article>
-          </div>
-        </section>
+				
+				<iframe
+				id="JotFormIFrame-233157818342054"
+				title="Cadastro no ForDevs"
+				onload="window.parent.scrollTo(0,0)"
+				allowtransparency="true"
+				allowfullscreen="true"
+				allow="geolocation; microphone; camera"
+				src="https://form.jotform.com/233157818342054"
+				frameborder="0"
+				style="min-width:100%;max-width:100%;height:539px;border:none;"
+				scrolling="no"
+			>
+			</iframe>
+			<script type="text/javascript">
+			var ifr = document.getElementById("JotFormIFrame-233157818342054");
+			if (ifr) {
+				var src = ifr.src;
+				var iframeParams = [];
+				if (window.location.href && window.location.href.indexOf("?") > -1) {
+					iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+				}
+				if (src && src.indexOf("?") > -1) {
+					iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+					src = src.substr(0, src.indexOf("?"))
+				}
+				iframeParams.push("isIframeEmbed=1");
+				ifr.src = src + "?" + iframeParams.join('&');
+			}
+			window.handleIFrameMessage = function(e) {
+				if (typeof e.data === 'object') { return; }
+				var args = e.data.split(":");
+				if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+				if (!iframe) { return; }
+				switch (args[0]) {
+					case "scrollIntoView":
+						iframe.scrollIntoView();
+						break;
+					case "setHeight":
+						iframe.style.height = args[1] + "px";
+						if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+							iframe.style.minHeight = args[1] + "px";
+						}
+						break;
+					case "collapseErrorPage":
+						if (iframe.clientHeight > window.innerHeight) {
+							iframe.style.height = window.innerHeight + "px";
+						}
+						break;
+					case "reloadPage":
+						window.location.reload();
+						break;
+					case "loadScript":
+						if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+						var src = args[1];
+						if (args.length > 3) {
+								src = args[1] + ':' + args[2];
+						}
+						var script = document.createElement('script');
+						script.src = src;
+						script.type = 'text/javascript';
+						document.body.appendChild(script);
+						break;
+					case "exitFullscreen":
+						if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+						else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+						else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+						else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+						else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+						break;
+				}
+				var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+				if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+					var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+					iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+				}
+			};
+			window.isPermitted = function(originUrl, whitelisted_domains) {
+				var url = document.createElement('a');
+				url.href = originUrl;
+				var hostname = url.hostname;
+				var result = false;
+				if( typeof hostname !== 'undefined' ) {
+					whitelisted_domains.forEach(function(element) {
+							if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+									result = true;
+							}
+					});
+					return result;
+				}
+			};
+			if (window.addEventListener) {
+				window.addEventListener("message", handleIFrameMessage, false);
+			} else if (window.attachEvent) {
+				window.attachEvent("onmessage", handleIFrameMessage);
+			}
+			</script>
 
-
-        <section>
-          <header class="major">
-            <h2>Os Primeiros Devs do ForDevs</h2>
-          </header>
-          <div class="posts">
-            <article>
-              <a href="#" class="image"><img src="assets/images/steffanySympson.jpg" alt="" /></a>
-              <h3>Steffany Sympson</h3>
-              <p>Engenheira de Produção formada e perita judicial que descobriu aos 31 anos sua vocação, talento, prazer e paixão por programar. ​Desde então é uma constante e crescente sede de aprender e crescer na profissão. </p>
-              <ul class="actions">
-                <li><a target="_blank" href="portfolioSteffanySympson.html" class="button">Mais</a></li>
-              </ul>
-            </article>
-            <article>
-              <a href="#" class="image"><img src="assets/images/marianaGrecco.jpg" alt="" /></a>
-              <h3>Mariana Grecco</h3>
-              <p>Dev, mulher e mãe. Essa é a Mariana (ou Mari, como todos a chamam). Gosta de aprender e explorar esses conhecimentos. Apesar de gostar de estudar o passado, vê na tecnologia o futuro.</p>
-              <ul class="actions">
-                <li><a target="_blank" href="portfolioMarianaGrecco.html" class="button">Mais</a></li>
-              </ul>
-            </article>
-                       
-            <!-- <article>
-              <a href="#" class="image"><img src="assets/images/lucas.jpg" alt="" /></a>
-              <h3>Lucas Matias</h3>
-              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-              <ul class="actions">
-                <li><a href="#" class="button">Mais</a></li>
-              </ul>
-            </article> -->
-
-          </div>
-        </section>
 
       </div>
     </div>
@@ -223,6 +251,7 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+	<script src="assets/js/form.js"></script>
 
 </body>
 
