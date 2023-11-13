@@ -1530,3 +1530,34 @@ input.correct {
   padding: 10px;
 }
 
+<<<<<<< Updated upstream
+=======
+#iframe {
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.orderList li{
+  padding: 10px;
+}
+
+.unorderListDataScience {
+  line-height: 1.5em;
+  list-style-image: url(../images/data-science.png)
+}
+
+.unorderListDataScience li{
+  padding: 10px;
+}
+
+#iframe {
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.orderList li{
+  padding: 10px;
+}
+>>>>>>> Stashed changes
