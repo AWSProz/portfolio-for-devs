@@ -1602,6 +1602,15 @@ input.correct {
   padding: 10px;
 }
 
+.unorderListMl {
+  line-height: 1.5em;
+  list-style-image: url(../images/machine-learning.png)
+}
+
+.unorderListMl li{
+  padding: 10px;
+}
+
 .unorderListGestao {
   line-height: 1.5em;
   list-style-image: url(../images/gestao.png)
