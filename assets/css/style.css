@@ -1664,3 +1664,12 @@ input.correct {
 .unorderListFront li{
   padding: 10px;
 }
+
+.unorderListUxUi {
+  line-height: 1.5em;
+  list-style-image: url(../images/ui.png);
+}
+
+.unorderListUxUi li{
+  padding: 10px;
+}
