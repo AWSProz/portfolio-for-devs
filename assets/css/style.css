@@ -1646,3 +1646,12 @@ input.correct {
 .unorderListFullStack li{
   padding: 10px;
 }
+
+.unorderListIoT {
+  line-height: 1.5em;
+  list-style-image: url(../images/internet-of-things.png);
+}
+
+.unorderListIoT li{
+  padding: 10px;
+}
