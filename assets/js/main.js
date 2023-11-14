@@ -263,3 +263,21 @@ function show() {
     iframe1.style.display = iframeShowing ? 'block' : 'none';
     iframeShowing = !iframeShowing;
 }
+
+function showFull2() {
+	var iframe1 = document.getElementById('iframeFull2');
+	iframe1.style.display = iframeShowing ? 'block' : 'none';
+	iframeShowing = !iframeShowing;
+}
+
+function showFull3() {
+	var iframe1 = document.getElementById('iframeFull3');
+	iframe1.style.display = iframeShowing ? 'block' : 'none';
+	iframeShowing = !iframeShowing;
+}
+
+function showFull4() {
+	var iframe1 = document.getElementById('iframeFull4');
+	iframe1.style.display = iframeShowing ? 'block' : 'none';
+	iframeShowing = !iframeShowing;
+}

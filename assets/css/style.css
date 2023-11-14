@@ -1523,7 +1523,7 @@ input.correct {
 
 .unorderListCiberSecurity {
   line-height: 1.5em;
-  list-style-image: url(../images/padlock.png)
+  list-style-image: url(../images/padlock.png);
 }
 
 .unorderListCiberSecurity li{
@@ -1532,7 +1532,7 @@ input.correct {
 
 .unorderListDataScience {
   line-height: 1.5em;
-  list-style-image: url(../images/data-science.png)
+  list-style-image: url(../images/data-science.png);
 }
 
 .unorderListDataScience li{
@@ -1545,14 +1545,41 @@ input.correct {
   margin-top: 50px;
 }
 
+#iframeFull2 {
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#iframeFull3 {
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#iframeFull4 {
+  display: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 .orderList li{
   padding: 10px;
 }
 .unorderListCloud {
   line-height: 1.5em;
-  list-style-image: url(../images/cloud.png)
+  list-style-image: url(../images/cloud.png);
 }
 
 .unorderListCloud li{
+  padding: 10px;
+}
+
+.unorderListFullStack {
+  line-height: 1.5em;
+  list-style-image: url(../images/fullStack.png);
+}
+
+.unorderListFullStack li{
   padding: 10px;
 }
