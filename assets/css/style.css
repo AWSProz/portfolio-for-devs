@@ -1556,3 +1556,48 @@ input.correct {
 .unorderListCloud li{
   padding: 10px;
 }
+
+.unorderListGame {
+  line-height: 1.5em;
+  list-style-image: url(../images/game.png)
+}
+
+.unorderListGame li{
+  padding: 10px;
+}
+
+.unorderListDevops {
+  line-height: 1.5em;
+  list-style-image: url(../images/devops.png)
+}
+
+.unorderListDevops li{
+  padding: 10px;
+}
+
+.unorderListGestao {
+  line-height: 1.5em;
+  list-style-image: url(../images/gestao.png)
+}
+
+.unorderListGestao li{
+  padding: 10px;
+}
+
+.unorderListInfra {
+  line-height: 1.5em;
+  list-style-image: url(../images/infra.png)
+}
+
+.unorderListInfra li{
+  padding: 10px;
+}
+
+.unorderListIa {
+  line-height: 1.5em;
+  list-style-image: url(../images/infra.png)
+}
+
+.unorderListIa li{
+  padding: 10px;
+}
